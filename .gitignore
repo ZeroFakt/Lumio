@@ -3,3 +3,8 @@
 
 # .env file
 .env
+
+# байткод
+__pycache__/
+*.pyc
+*.pyo
