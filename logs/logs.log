@@ -1,6 +1,0 @@
-[INFO] 2025-09-03 23:05:01,824 - Start polling
-[INFO] 2025-09-03 23:05:01,982 - Run polling for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
-[INFO] 2025-09-03 23:05:03,385 - Update id=708970554 is handled. Duration 1239 ms by bot id=8263075165
-[WARNING] 2025-09-03 23:05:27,107 - Received SIGINT signal
-[INFO] 2025-09-03 23:05:27,108 - Polling stopped for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
-[INFO] 2025-09-03 23:05:27,108 - Polling stopped
