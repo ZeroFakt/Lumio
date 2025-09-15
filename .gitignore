@@ -8,3 +8,10 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# git
+.gitignore
+
+# logs
+logs/
+*.log
