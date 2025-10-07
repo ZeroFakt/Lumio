@@ -14,8 +14,8 @@ logging.basicConfig(
 )
 
 TOKEN = str(os.getenv("TOKEN_BOT"))
-# if TOKEN is None:
-#     raise ValueError("TOKEN не задан в переменных окружения")
+if TOKEN is None:
+    raise ValueError("TOKEN не задан в переменных окружения")
 
 async def main():
     bot = Bot(token=TOKEN)
@@ -24,7 +24,11 @@ async def main():
     dp.include_router(start.router)
 
     await bot.delete_webhook(drop_pending_updates=True)
+    logging.info("Бот запущен и готов к работе")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except (KeyboardInterrupt, SystemExit):
+        logging.warning("Бот был остановлен пользователем")

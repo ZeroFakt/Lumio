@@ -1,6 +1,86 @@
-[INFO] 2025-09-03 23:05:01,824 - Start polling
-[INFO] 2025-09-03 23:05:01,982 - Run polling for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
-[INFO] 2025-09-03 23:05:03,385 - Update id=708970554 is handled. Duration 1239 ms by bot id=8263075165
-[WARNING] 2025-09-03 23:05:27,107 - Received SIGINT signal
-[INFO] 2025-09-03 23:05:27,108 - Polling stopped for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
-[INFO] 2025-09-03 23:05:27,108 - Polling stopped
+[INFO] 2025-10-07 23:26:15,534 - Бот запущен и готов к работе
+[INFO] 2025-10-07 23:26:15,535 - Start polling
+[INFO] 2025-10-07 23:26:15,751 - Run polling for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
+[WARNING] 2025-10-07 23:27:04,202 - Received SIGINT signal
+[INFO] 2025-10-07 23:27:04,205 - Polling stopped for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
+[INFO] 2025-10-07 23:27:04,206 - Polling stopped
+[INFO] 2025-10-07 23:27:37,480 - Бот запущен и готов к работе
+[INFO] 2025-10-07 23:27:37,480 - Start polling
+[INFO] 2025-10-07 23:27:37,556 - Run polling for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
+[INFO] 2025-10-07 23:33:41,752 - Бот запущен и готов к работе
+[INFO] 2025-10-07 23:33:41,753 - Start polling
+[INFO] 2025-10-07 23:33:42,049 - Run polling for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
+[INFO] 2025-10-07 23:35:43,893 - Update id=708970564 is handled. Duration 404 ms by bot id=8263075165
+[INFO] 2025-10-07 23:36:25,461 - Update id=708970565 is handled. Duration 33408 ms by bot id=8263075165
+[INFO] 2025-10-07 23:36:52,683 - Update id=708970566 is not handled. Duration 3507 ms by bot id=8263075165
+[ERROR] 2025-10-07 23:36:52,685 - Cause exception while process update id=708970566 by bot id=8263075165
+TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+Traceback (most recent call last):
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/handlers/start.py", line 22, in handle_message
+    await message.answer(reply)
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aimi/Documents/VSCodeProjects/voice-companion-bot/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+[WARNING] 2025-10-07 23:39:34,791 - Received SIGINT signal
+[INFO] 2025-10-07 23:39:34,793 - Polling stopped for bot @lumio_voice_companion_bot id=8263075165 - 'Lumio'
+[INFO] 2025-10-07 23:39:34,794 - Polling stopped
